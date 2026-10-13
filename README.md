@@ -6,6 +6,8 @@
 
 Решения не являются официальными и могут содержать ошибки. Номера страниц в файлах указаны по этому изданию.
 
+По ходу решений я также записываю, что вызвало у меня сложности, и добавляю пояснения, найденные в интернете: наглядные примеры, аналогии, рисунки. Цель — чтобы решения были понятны не только тем, кто уже хорошо знает материал, но и более широкому кругу читателей. Такие пояснения обычно находятся в разделе «Заметки».
+
 ## Как читать
 
 - Оглавление и прогресс — в [Zorich-part1/README.md](Zorich-part1/README.md).
@@ -25,4 +27,4 @@
 
 ---
 
-*English:* personal solutions to the exercises in V. A. Zorich, *Mathematical Analysis I*, 10th revised Russian edition. Solutions are in Russian, formulas in LaTeX. Public domain (CC0); problem statements belong to the book's author and publisher.
+*English:* personal solutions to the exercises in V. A. Zorich, *Mathematical Analysis I*, 10th revised Russian edition. Along the way I note what I found difficult and add explanations found online, so the solutions are accessible to a wider audience. Solutions are in Russian, formulas in LaTeX. Public domain (CC0); problem statements belong to the book's author and publisher.
