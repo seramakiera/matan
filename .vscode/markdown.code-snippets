@@ -1,0 +1,23 @@
+{
+  "not":     { "scope": "markdown,latex", "prefix": ";not",  "body": "\\neg " },
+  "and":     { "scope": "markdown,latex", "prefix": ";and",  "body": "\\land " },
+  "or":      { "scope": "markdown,latex", "prefix": ";or",   "body": "\\lor " },
+  "imp":     { "scope": "markdown,latex", "prefix": ";imp",  "body": "\\Rightarrow " },
+  "iff":     { "scope": "markdown,latex", "prefix": ";iff",  "body": "\\Leftrightarrow " },
+  "in":      { "scope": "markdown,latex", "prefix": ";in",   "body": "\\in " },
+  "notin":   { "scope": "markdown,latex", "prefix": ";nin",  "body": "\\notin " },
+  "cup":     { "scope": "markdown,latex", "prefix": ";cup",  "body": "\\cup " },
+  "cap":     { "scope": "markdown,latex", "prefix": ";cap",  "body": "\\cap " },
+  "sub":     { "scope": "markdown,latex", "prefix": ";sub",  "body": "\\subset " },
+  "sube":    { "scope": "markdown,latex", "prefix": ";sube", "body": "\\subseteq " },
+  "subne":   { "scope": "markdown,latex", "prefix": ";subn", "body": "\\subsetneq " },
+  "neq":     { "scope": "markdown,latex", "prefix": ";neq",  "body": "\\neq " },
+  "forall":  { "scope": "markdown,latex", "prefix": ";all",  "body": "\\forall " },
+  "exists":  { "scope": "markdown,latex", "prefix": ";ex",   "body": "\\exists " },
+  "empty":   { "scope": "markdown,latex", "prefix": ";empty","body": "\\varnothing " },
+  "setminus":{ "scope": "markdown,latex", "prefix": ";minus","body": "\\setminus " },
+  "compl":   { "scope": "markdown,latex", "prefix": ";comp", "body": "\\complement " },
+  "set":     { "scope": "markdown,latex", "prefix": ";set",  "body": "\\{ $1 \\mid $2 \\\\}$0" },
+  "inline":  { "scope": "markdown,latex", "prefix": ";m",    "body": "$$1$ $0" },
+  "block":   { "scope": "markdown,latex", "prefix": ";M",    "body": "$$\n$1\n$$\n$0" }
+}

@@ -1,0 +1,6 @@
+{
+  "[markdown]": {
+    "editor.tabCompletion": "on",
+    "editor.quickSuggestions": { "other": "on" }
+  }
+}

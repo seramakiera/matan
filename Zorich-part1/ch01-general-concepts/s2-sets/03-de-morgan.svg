@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 230" font-family="Georgia, serif" font-size="15">
+  <rect width="660" height="230" fill="#ffffff"/>
+  <defs>
+    <rect id="M" x="10" y="20" width="180" height="150"/>
+    <circle id="A" cx="78"  cy="95" r="50"/>
+    <circle id="B" cx="122" cy="95" r="50"/>
+    <!-- everything in M except A -->
+    <mask id="notA"><use href="#M" fill="#fff"/><use href="#A" fill="#000"/></mask>
+    <mask id="notB"><use href="#M" fill="#fff"/><use href="#B" fill="#000"/></mask>
+    <!-- everything in M except A ∩ B -->
+    <clipPath id="clipB"><use href="#B"/></clipPath>
+    <mask id="notAB"><use href="#M" fill="#fff"/><use href="#A" fill="#000" clip-path="url(#clipB)"/></mask>
+    <pattern id="hA" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#d9480f" stroke-width="2"/>
+    </pattern>
+    <pattern id="hB" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#1971c2" stroke-width="2"/>
+    </pattern>
+    <g id="outline" fill="none" stroke="#222" stroke-width="1.5">
+      <use href="#M"/><use href="#A"/><use href="#B"/>
+    </g>
+    <g id="labels" fill="#222" font-style="italic">
+      <text x="16" y="38">M</text><text x="50" y="100">A</text><text x="140" y="100">B</text>
+    </g>
+  </defs>
+
+  <!-- Panel 1: complement of A ∩ B -->
+  <g transform="translate(10,0)">
+    <use href="#M" fill="#7950f2" opacity="0.5" mask="url(#notAB)"/>
+    <use href="#outline"/><use href="#labels"/>
+    <text x="100" y="200" text-anchor="middle">x ∉ A ∩ B</text>
+  </g>
+
+  <!-- Panel 2: not A (orange) and not B (blue) -->
+  <g transform="translate(230,0)">
+    <use href="#M" fill="url(#hA)" mask="url(#notA)"/>
+    <use href="#M" fill="url(#hB)" mask="url(#notB)"/>
+    <use href="#outline"/><use href="#labels"/>
+    <text x="100" y="200" text-anchor="middle"><tspan fill="#d9480f">x ∉ A</tspan>  и  <tspan fill="#1971c2">x ∉ B</tspan></text>
+  </g>
+
+  <!-- Panel 3: union of the two hatchings -->
+  <g transform="translate(450,0)">
+    <use href="#M" fill="#7950f2" opacity="0.5" mask="url(#notAB)"/>
+    <use href="#outline"/><use href="#labels"/>
+    <text x="100" y="200" text-anchor="middle">(x ∉ A) ∨ (x ∉ B)</text>
+  </g>
+
+  <text x="220" y="100" font-size="24" text-anchor="middle" fill="#555">→</text>
+  <text x="440" y="100" font-size="24" text-anchor="middle" fill="#555">→</text>
+  <text x="330" y="224" font-size="12" text-anchor="middle" fill="#555">закрашено хоть какой-то штриховкой = всё, кроме середины A ∩ B</text>
+</svg>
